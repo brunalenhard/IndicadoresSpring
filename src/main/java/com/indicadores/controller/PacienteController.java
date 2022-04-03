@@ -1,11 +1,8 @@
 package com.indicadores.controller;
 
-import com.indicadores.controller.model.PacienteResponse;
 import com.indicadores.domain.Paciente;
-import com.indicadores.mapper.PacienteMapper;
 import com.indicadores.service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.relational.core.sql.In;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
