@@ -1,4 +1,4 @@
-package com.indicadores;
+package com.indicadores.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
@@ -17,7 +17,6 @@ public class Paciente {
     private BigDecimal valor;
     public ConclusaoVenda conclusaoVenda;
     public FormaCaptacao formaCaptacao;
-    @Column("forma_pagamento")
     public FormaDePagamento formaDePagamento;
 
     public Paciente(Integer id, String nome, String tipoDeCliente, BigDecimal valor, ConclusaoVenda conclusaoVenda, FormaCaptacao formaCaptacao, FormaDePagamento formaDePagamento) {

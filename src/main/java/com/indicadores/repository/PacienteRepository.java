@@ -1,10 +1,9 @@
-package com.indicadores;
+package com.indicadores.repository;
 
-import org.springframework.data.jdbc.repository.query.Query;
+import com.indicadores.domain.Paciente;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.awt.image.PackedColorModel;
 import java.util.List;
 
 @Repository

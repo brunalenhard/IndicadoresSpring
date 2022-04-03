@@ -1,5 +1,10 @@
-package com.indicadores;
+package com.indicadores.service;
 
+import com.indicadores.domain.ConclusaoVenda;
+import com.indicadores.domain.FormaCaptacao;
+import com.indicadores.domain.FormaDePagamento;
+import com.indicadores.domain.Paciente;
+import com.indicadores.repository.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -33,6 +38,18 @@ public class PacienteService {
                 buscaPorNome();
                 break;
         }
+    }
+
+    public Paciente criarPaciente(Paciente paciente){
+        return pacienteRepository.save(paciente);
+    }
+
+    public Iterable<Paciente> buscarTodos(){
+        return pacienteRepository.findAll();
+    }
+
+    public Paciente findById(Integer id){
+        return pacienteRepository.findById(id).get();
     }
 
     private void buscaPorNome() {

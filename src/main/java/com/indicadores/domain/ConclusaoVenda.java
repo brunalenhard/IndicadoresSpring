@@ -1,4 +1,4 @@
-package com.indicadores;
+package com.indicadores.domain;
 
 public enum ConclusaoVenda {
     VENDIDO, PENDENTE
